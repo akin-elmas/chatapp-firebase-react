@@ -1,0 +1,150 @@
+body {
+  background-color: #000000;
+}
+
+.App {
+  text-align: center;
+  max-width: 728px;
+  margin: 0 auto;
+}
+
+.App header {
+  background-color: #e0f7fa;
+  height: 10vh;
+  min-height: 50px;
+  max-width: 728px;
+  width: 100%;
+  position: fixed;
+  color: white;
+  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content:space-between;
+  z-index: 99;
+  padding: 10px;
+  box-sizing: border-box;
+  border-radius: 0 0 40px 40px;
+}
+.App section {
+  display: flex;
+  flex-direction:column;
+  justify-content:center;
+  min-height: 100vh;
+  background-color: #aec4c7;
+}
+main {
+  padding: 10px;
+  height:80vh;
+  margin: 10vh 0 10vh;
+  overflow-y: scroll;
+  display: flex;
+  flex-direction: column;
+}
+
+main::--webkit-scrollbar{
+  width:0.25rem;
+}
+
+main::--webkit-scrollbar-track{
+  background:#610101;
+}
+
+
+main::--webkit-scrollbar-thumb{
+  background:#4e4d1a;
+}
+
+form {
+  height:10vh;
+  position:fixed;
+  bottom:0;
+  background-color: rgb(24,23,23);
+  width: 100%;
+  max-width: 728px;
+  display: flex;
+  font-size: 1.5rem;
+}
+form button {
+  width: 20%;
+  background-color: #04aa49;
+  color: aliceblue;
+  font-size: 1.1rem;
+  border: none;
+  border-radius: 60px;
+  margin-top: 10px;
+}
+input {
+  line-height: 1.5;
+  width: 100%;
+  font-size: 1.5rem;
+  background: rgba(255, 255, 255);
+  border: none;
+  border-radius: 60px;
+  margin-top: 10px;
+  outline: none;
+  padding: 0 20px;
+}
+
+button{
+background-color: #e0f7fa;
+border: none;
+color: rgb(0, 0, 0);
+padding: 15px 32px;
+cursor: pointer;
+text-decoration: none;
+text-align: center;
+display: inline-block;
+font-size: 1.1rem;
+}
+
+button:disabled{
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
+.sign-in{
+  color: #000000;
+  background: white;
+  border-radius: 20px;
+  margin: 0 auto;
+}
+
+ul, li {
+  text-align: left;list-style: none;
+}
+
+p {
+  max-width: 500px;
+  margin-bottom: 12px;
+  line-height: 24px;
+  padding: 10px 20px;
+  border-radius: 25px;
+  position: relative;
+  color: rgb(255, 255, 255);
+  text-align: center;
+}
+
+.message {
+  display: flex;
+  align-items: center;
+}
+.sent {
+  flex-direction: row-reverse;
+}
+.sent p{
+  color: rgb(255, 255, 255);
+  background: rgb(0, 127, 177);
+  align-self: flex-end;
+}
+
+.received p{
+  background: #e5e5e5;
+  color: black;
+}
+
+img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin:2px 5px;
+}
